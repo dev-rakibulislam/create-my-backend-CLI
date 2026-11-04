@@ -1,0 +1,36 @@
+{
+  "name": "create-my-backend",
+  "version": "0.1.0",
+  "bin": {
+    "create-my-backend": "./dist/index.js"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "bun:typecheck": "bun check",
+    "dev": "tsx src/index.ts",
+    "build": "tsup ",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^26.6.6",
+    "tsup": "^9.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "commander": "^15.0.0",
+    "execa": "^10.2.1",
+    "fs-extra": "^11.4.1",
+    "picocolors": "^1.1.1"
+  }
+}
